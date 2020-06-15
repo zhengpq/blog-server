@@ -4,7 +4,8 @@ module.exports = app => {
   router.get('/news', controller.news.list)
   router.get('/user/:id', controller.user.getUserInfo)
 
-  // router.get('/api/detail/article')
+  // 获取文章内容
+  router.get('/article', controller.article.article)
 
   // 文章编辑
   router.post('/publish/article', controller.article.publishArticle)
