@@ -32,7 +32,7 @@ exports.mysql = {
     // 用户名
     user: 'root',
     // 密码
-    password: '123456',
+    password: '123456789',
     // 数据库名
     database: 'blog',
   },
@@ -41,6 +41,10 @@ exports.mysql = {
   // 是否加载到 agent 上，默认关闭
   agent: false,
 }
+
+exports.assets = {
+  publicPath: '/public/',
+};
 
 exports.security = {
   csrf: {

@@ -21,7 +21,7 @@ class ArticleService extends Service {
     const row = {
       id,
       title,
-      type,
+      type,   
       content
     }
     const result = await this.app.mysql.update('Articles', row);
