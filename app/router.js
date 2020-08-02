@@ -9,7 +9,7 @@ module.exports = app => {
 
   // 文章编辑
   router.post('/api/publish/article', controller.article.publishArticle)
-  router.post('/update/article', controller.article.updateArticle)
+  router.post('/api/update/article', controller.article.updateArticle)
 
   // 管理相关
   router.get('/api/admin/articles', controller.article.articles)
